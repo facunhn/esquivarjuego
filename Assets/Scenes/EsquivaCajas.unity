@@ -277,6 +277,7 @@ GameObject:
   - component: {fileID: 966657093}
   - component: {fileID: 966657097}
   - component: {fileID: 966657098}
+  - component: {fileID: 966657099}
   m_Layer: 0
   m_Name: caja
   m_TagString: Caja
@@ -369,6 +370,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 3
+  pisoY: -5
 --- !u!54 &966657098
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -383,8 +385,21 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &966657099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966657092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe819666ee22aa94a9e3ce405632935e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CajaMovementScript: {fileID: 0}
 --- !u!1 &997334789
 GameObject:
   m_ObjectHideFlags: 0
@@ -518,7 +533,7 @@ GameObject:
   - component: {fileID: 1122913641}
   m_Layer: 0
   m_Name: Plane
-  m_TagString: Untagged
+  m_TagString: Piso
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
